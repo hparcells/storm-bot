@@ -48,7 +48,12 @@ Providing only one argument, automatically sets the low to either 1 or -1.
     }
 
     // If args was bad.
-    return await message.channel.send('Arguments must be numbers.');
+    return await message.channel.send(`
+Usage:
+Providing only one argument, automatically sets the low to either 1 or -1.
+- s!random [high]
+- s!random [low] [high]
+      `);
   }
 }
 
