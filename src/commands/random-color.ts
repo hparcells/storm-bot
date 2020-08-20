@@ -9,9 +9,10 @@ class RandomColorCommand extends Command {
   }
 
   async exec(message: Message) {
+    // Random color.
     const color = Math.floor(Math.random() * 16777215).toString(16);
 
-    message.channel.send({
+    return message.channel.send({
       embed: {
         title: 'Random Color',
         description: `#${color}`,
