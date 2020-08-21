@@ -3,6 +3,7 @@
     "ignoreWords": [
         "akairo",
         "cmyk",
+        "httpcat",
         "randomcolor",
         "singlecolorimage",
         "uuidv"
