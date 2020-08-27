@@ -18,4 +18,4 @@ export const client = new AkairoClient(
 // Login using the token.
 client.login(process.env.TOKEN as string);
 
-botLog(`Logged in.`);
+botLog('Logged in.');
