@@ -9,7 +9,7 @@ class ColorCommand extends Command {
     });
   }
 
-  async exec(message: Message, args: any) {
+  async exec(message: Message) {
     const colorArg = message.content.substring(8);
 
     if (colorArg) {
