@@ -3,8 +3,10 @@
     "ignoreWords": [
         "akairo",
         "cmyk",
+        "diliminator",
         "httpcat",
         "randomcolor",
+        "rrggbb",
         "singlecolorimage",
         "uuidv"
     ]

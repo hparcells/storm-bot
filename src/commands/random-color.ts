@@ -1,9 +1,14 @@
-import { Command } from 'discord-akairo';
 import { Message } from 'discord.js';
 
-class RandomColorCommand extends Command {
+import StormBotCommand from '../types';
+
+class RandomColorCommand extends StormBotCommand {
+  name = 'Random Color';
+  description = 'Random color in #rrggbb format.';
+  usage = 's!randomcolor';
+
   constructor() {
-    super('randomcolor', {
+    super('random-color', {
       aliases: ['randomcolor']
     });
   }

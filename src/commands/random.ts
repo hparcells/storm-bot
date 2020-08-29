@@ -1,8 +1,13 @@
-import { Command } from 'discord-akairo';
 import { Message } from 'discord.js';
 import { randomInt } from '@reverse/random';
 
-class RandomCommand extends Command {
+import StormBotCommand from '../types';
+
+class RandomCommand extends StormBotCommand {
+  name = 'Random';
+  description = 'Random Number';
+  usage = 's!random <high/low> [high]';
+
   constructor() {
     super('random', {
       aliases: ['random', 'rand'],

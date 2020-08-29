@@ -1,8 +1,13 @@
-import { Command } from 'discord-akairo';
 import { Message } from 'discord.js';
 import { randomInt } from '@reverse/random';
 
-class FlipCommand extends Command {
+import StormBotCommand from '../types';
+
+class FlipCommand extends StormBotCommand {
+  name = 'Flip';
+  description = 'Flips a coin.';
+  usage = 's!flip';
+
   constructor() {
     super('flip', {
       aliases: ['flip', 'coin']

@@ -1,9 +1,14 @@
-import { Command } from 'discord-akairo';
 import { Message } from 'discord.js';
+
+import StormBotCommand from '../types';
 
 import { client } from '..';
 
-class StatsCommand extends Command {
+class StatsCommand extends StormBotCommand {
+  name = 'Stats';
+  description = 'Stats of the bot.';
+  usage = 's!stats';
+
   constructor() {
     super('stats', {
       aliases: ['stats'],

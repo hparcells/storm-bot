@@ -1,8 +1,35 @@
 import { AkairoClient, CommandHandler, ListenerHandler } from 'discord-akairo';
 
+import StormBotCommand from './types';
+import ColorCommand from './commands/color';
+import DefineCommand from './commands/define';
+import FlipCommand from './commands/flip';
+import HelpCommand from './commands/help';
+import HttpCommand from './commands/http';
+import PingCommand from './commands/ping';
+import QrCommand from './commands/qr';
+import RandomCommand from './commands/random';
+import RandomColorCommand from './commands/random-color';
+import StatsCommand from './commands/stats';
+import UuidCommand from './commands/uuid';
+
 export class StormBotClient extends AkairoClient {
   commandHandler: CommandHandler;
   listenerHandler: ListenerHandler;
+
+  commands: StormBotCommand[] = [
+    new ColorCommand(),
+    new DefineCommand(),
+    new FlipCommand(),
+    new HelpCommand(),
+    new HttpCommand(),
+    new PingCommand(),
+    new QrCommand(),
+    new RandomCommand(),
+    new RandomColorCommand(),
+    new StatsCommand(),
+    new UuidCommand()
+  ];
 
   constructor() {
     super(
@@ -22,7 +49,9 @@ export class StormBotClient extends AkairoClient {
     });
 
     // Load some things.
-    this.commandHandler.loadAll();
+    this.commands.forEach((command) => {
+      this.commandHandler.register(command);
+    });
     this.commandHandler.useListenerHandler(this.listenerHandler);
 
     this.listenerHandler.loadAll();

@@ -1,8 +1,13 @@
-import { Command } from 'discord-akairo';
 import { Message } from 'discord.js';
 import Color from 'color';
 
-class ColorCommand extends Command {
+import StormBotCommand from '../types';
+
+class ColorCommand extends StormBotCommand {
+  name = 'Color';
+  description = 'Gives color data from a certain color.';
+  usage = 's!color <color>';
+
   constructor() {
     super('color', {
       aliases: ['color', 'colour']

@@ -1,8 +1,13 @@
-import { Command } from 'discord-akairo';
 import { Message } from 'discord.js';
 import fetch from 'node-fetch';
 
-class QrCommand extends Command {
+import StormBotCommand from '../types';
+
+class QrCommand extends StormBotCommand {
+  name = 'QR';
+  description = 'Generates a QR code.';
+  usage = 's!qr <data>';
+
   constructor() {
     super('qr', {
       aliases: ['qr', 'qrcode']

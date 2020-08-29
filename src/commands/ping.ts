@@ -1,7 +1,12 @@
-import { Command } from 'discord-akairo';
 import { Message } from 'discord.js';
 
-class PingCommand extends Command {
+import StormBotCommand from '../types';
+
+class PingCommand extends StormBotCommand {
+  name = 'Ping';
+  description = 'Ping of the bot.';
+  usage = 's!ping';
+
   constructor() {
     super('ping', {
       aliases: ['ping']

@@ -1,8 +1,13 @@
-import { Command } from 'discord-akairo';
 import { Message } from 'discord.js';
 import fetch from 'node-fetch';
 
-class DefineCommand extends Command {
+import StormBotCommand from '../types';
+
+class DefineCommand extends StormBotCommand {
+  name = 'Color';
+  description = 'Defines an English word.';
+  usage = 's!define <word>';
+
   constructor() {
     super('define', {
       aliases: ['define'],

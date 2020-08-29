@@ -1,7 +1,12 @@
-import { Command } from 'discord-akairo';
 import { Message } from 'discord.js';
 
-class HttpCommand extends Command {
+import StormBotCommand from '../types';
+
+class HttpCommand extends StormBotCommand {
+  name = 'HTTP';
+  description = 'Provides a image of a HTTP status code courtesy of HTTP Cats.';
+  usage = 's!http <status code>';
+
   constructor() {
     super('http', {
       aliases: ['http', 'httpcat'],

@@ -1,8 +1,13 @@
-import { Command } from 'discord-akairo';
 import { Message } from 'discord.js';
 import { v4 as uuidv4 } from 'uuid';
 
-class UuidCommand extends Command {
+import StormBotCommand from '../types';
+
+class UuidCommand extends StormBotCommand {
+  name = 'UUID';
+  description = 'Random UUID.';
+  usage = 's!uuid';
+
   constructor() {
     super('uuid', {
       aliases: ['uuid']
