@@ -6,10 +6,12 @@ import DefineCommand from './commands/define';
 import FlipCommand from './commands/flip';
 import HelpCommand from './commands/help';
 import HttpCommand from './commands/http';
+import OneCommand from './commands/one';
 import PingCommand from './commands/ping';
 import QrCommand from './commands/qr';
 import RandomCommand from './commands/random';
 import RandomColorCommand from './commands/random-color';
+import ShuffleCommand from './commands/shuffle';
 import StatsCommand from './commands/stats';
 import UuidCommand from './commands/uuid';
 
@@ -23,10 +25,12 @@ export class StormBotClient extends AkairoClient {
     new FlipCommand(),
     new HelpCommand(),
     new HttpCommand(),
+    new OneCommand(),
     new PingCommand(),
     new QrCommand(),
     new RandomCommand(),
     new RandomColorCommand(),
+    new ShuffleCommand(),
     new StatsCommand(),
     new UuidCommand()
   ];

@@ -10,7 +10,7 @@ class QrCommand extends StormBotCommand {
 
   constructor() {
     super('qr', {
-      aliases: ['qr', 'qrcode']
+      aliases: ['qr']
     });
   }
 
