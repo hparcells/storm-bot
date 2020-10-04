@@ -7,7 +7,8 @@
 ## Commands
 | Command Usage | Aliases | Description |
 |-|-|-|
-| s!color \<color\> | colour | Gives color data from a certain color. |
+| s!color \<color\> |  | Gives color data from a certain color. |
+| s!convert \<amount\> \<starting unit\> \<ending unit\> |  | Converts between units. |
 | s!define \<word\> |  | Defines a English word. |
 | s!flip | coin | Flips a coin. |
 | s!help |  | Sends help and usage with all the commands. |

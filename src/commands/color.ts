@@ -10,7 +10,7 @@ class ColorCommand extends StormBotCommand {
 
   constructor() {
     super('color', {
-      aliases: ['color', 'colour']
+      aliases: ['color']
     });
   }
 

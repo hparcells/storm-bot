@@ -14,6 +14,7 @@ import RandomColorCommand from './commands/random-color';
 import ShuffleCommand from './commands/shuffle';
 import StatsCommand from './commands/stats';
 import UuidCommand from './commands/uuid';
+import ConvertCommand from './commands/convert';
 
 export class StormBotClient extends AkairoClient {
   commandHandler: CommandHandler;
@@ -21,6 +22,7 @@ export class StormBotClient extends AkairoClient {
 
   commands: StormBotCommand[] = [
     new ColorCommand(),
+    new ConvertCommand(),
     new DefineCommand(),
     new FlipCommand(),
     new HelpCommand(),
