@@ -7,6 +7,7 @@
 ## Commands
 | Command Usage | Aliases | Description |
 |-|-|-|
+| s!about |  | Gives information about the bot. |
 | s!color \<color\> |  | Gives color data from a certain color. |
 | s!convert \<amount\> \<starting unit\> \<ending unit\> |  | Converts between units. |
 | s!define \<word\> |  | Defines a English word. |

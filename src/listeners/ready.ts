@@ -15,6 +15,15 @@ class ReadyListener extends Listener {
 
   exec() {
     botLog(`Logged into ${client.guilds.cache.size} ${plural(client.guilds.cache.size, 'guild')}.`);
+
+    client.user?.setActivity(
+      `in ${client.guilds.cache.size} ${plural(client.guilds.cache.size, 'server')}.`
+    );
+    setInterval(() => {
+      client.user?.setActivity(
+        `in ${client.guilds.cache.size} ${plural(client.guilds.cache.size, 'server')}.`
+      );
+    }, 60000);
   }
 }
 

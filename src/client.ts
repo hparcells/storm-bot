@@ -1,7 +1,10 @@
 import { AkairoClient, CommandHandler, ListenerHandler } from 'discord-akairo';
 
 import StormBotCommand from './types';
+
+import AboutCommand from './commands/about';
 import ColorCommand from './commands/color';
+import ConvertCommand from './commands/convert';
 import DefineCommand from './commands/define';
 import FlipCommand from './commands/flip';
 import HelpCommand from './commands/help';
@@ -14,13 +17,13 @@ import RandomColorCommand from './commands/random-color';
 import ShuffleCommand from './commands/shuffle';
 import StatsCommand from './commands/stats';
 import UuidCommand from './commands/uuid';
-import ConvertCommand from './commands/convert';
 
 export class StormBotClient extends AkairoClient {
   commandHandler: CommandHandler;
   listenerHandler: ListenerHandler;
 
   commands: StormBotCommand[] = [
+    new AboutCommand(),
     new ColorCommand(),
     new ConvertCommand(),
     new DefineCommand(),
