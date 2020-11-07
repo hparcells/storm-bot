@@ -14,6 +14,7 @@ import PingCommand from './commands/ping';
 import QrCommand from './commands/qr';
 import RandomCommand from './commands/random';
 import RandomColorCommand from './commands/random-color';
+import RedditDownloadCommand from './commands/reddit-dl';
 import ShuffleCommand from './commands/shuffle';
 import StatsCommand from './commands/stats';
 import UuidCommand from './commands/uuid';
@@ -35,6 +36,7 @@ export class StormBotClient extends AkairoClient {
     new QrCommand(),
     new RandomCommand(),
     new RandomColorCommand(),
+    new RedditDownloadCommand(),
     new ShuffleCommand(),
     new StatsCommand(),
     new UuidCommand()

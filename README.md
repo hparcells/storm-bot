@@ -19,5 +19,6 @@
 | s!qr \<data\> |  | Generates a QR code. |
 | s!random <high/low> [high] | rand | Random number. |
 | s!randomcolor |  | Random color in #rrggbb format. |
+| s!rdl \<reddit post url\> |  | Gets a URL to download media on Reddit. |
 | s!shuffle \<list of items\> |  | Shuffles a comma separated list and send it. |
 | s!uuid |  | Random UUID. |
